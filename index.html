@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopción de Mascotas</title>
+  <style>
+    /* Estilos generales */
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(182, 182, 166);
+    }
+    
+    header {
+      background-color: #6ba7bf;
+      color: #ffffff;
+      padding: 20px;
+    }
+    
+    h1, h2 {
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    p {
+      color: #000000;
+    }
+    
+    /* Barra de navegación */
+    .navbar {
+      background-color: #4d8db2;
+      padding: 10px;
+    }
+    
+    .navbar-brand {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+    .navbar-nav {
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .nav-item {
+      margin-left: 20px;
+    }
+    
+    .nav-link {
+      color: #000000;
+      text-decoration: none;
+    }
+    
+    /* Estilos específicos de Flexbox */
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    
+    .flex-item {
+      flex: 1 1 300px;
+      margin: 10px;
+      padding: 20px;
+      background-color: #316269;
+      border-radius: 5px;
+    }
+    
+    /* Media query para dispositivos móviles */
+    @media (max-width: 768px) {
+      .navbar-nav {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      
+      .nav-item {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Bienvenido a nuestra comunidad de adopción de mascotas</h1>
+    </div>
+  </header>
+  
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">Adopción de Mascotas</a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Adopción</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Voluntariado</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <section class="container">
+    <h2>¿Por qué adoptar una mascota?</h2>
+    <div class="flex-container">
+      <div class="flex-item">Salvauna vida</div>
+      <div class="flex-item">Amor incondicional</div>
+      <div class="flex-item">Variedad de opciones</div>
+    </div>
+  </section>
+  
+  <section class="container">
+    <h2>¿Cómo funciona nuestro proceso de adopción?</h2>
+    <ol>
+      <li>Explora nuestras mascotas</li>
+      <li>Contacta con nosotros</li>
+      <li>Encuentro personal</li>
+      <li>Proceso de adopción</li>
+      <li>Bienvenido a casa</li>
+    </ol>
+  </section>
+  
+  <section class="container">
+    <h2>¡Adopta hoy y cambia una vida!</h2>
+    <p>En nuestra comunidad de adopción de mascotas, no solo estarás encontrando un amigo leal, sino que también estarás marcando una diferencia significativa en la vida de un animal necesitado. No esperes más, ¡explora nuestras mascotas disponibles y comienza tu viaje de adopción hoy mismo!</p>
+  </section>
+  
+  <section class="container">
+    <h2>Formulario de contacto</h2>
+    <form id="contact-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+      
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+    <script src="script.js"></script>
+</body>
+</html>
